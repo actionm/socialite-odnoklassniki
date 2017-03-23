@@ -44,7 +44,7 @@ class Provider extends AbstractProvider implements ProviderInterface
         $params = [
             'format'          => 'json',
             'method'          => 'users.getCurrentUser',
-            'application_key' => env('ODNOKLASSNIKI_PUBLIC'),
+            'application_key' => $this->clientId,
             'fields'          => 'uid,name,first_name,last_name,birthday,pic190x190,has_email,email'
         ];
 
